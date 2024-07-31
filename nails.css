@@ -1,0 +1,217 @@
+/* nails.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar-logo a img {
+    width: 100px;
+    height: 50px;
+}
+
+.navbar-search input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-links .active a {
+    color: #ff6f61; /* Active link color */
+    font-weight: bold; /* Optional: Makes active link bold */
+}
+
+.navbar-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.nails-hero {
+    background-image: url('https://via.placeholder.com/1920x600');
+    background-size: cover;
+    background-position: center;
+    height: 33rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.nails-hero-content {
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+    border-radius: 8px;
+    /* height: 50rem; */
+    border: 2px solid red;
+}
+
+.nails-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff6f61; /* Changed text color to match theme */
+}
+
+.nails-hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.products {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid red;
+}
+
+.products .container{
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    justify-content: space-between;
+    width: 94%;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* margin: 10px; */
+    padding: 20px;
+    text-align: center;
+    width: 20rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.2s, box-shadow 0.
+}
+
+
+
+.product-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px 4px 0 0; /* Rounded top corners */
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;
+    display: inline-block;
+    transition: background-color 0.2s; /* Adds transition effect */
+}
+
+.btn:hover {
+    background-color: #ff3b2e;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #ff6f61;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-search {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links li {
+        margin: 10px 0;
+    }
+
+    .navbar-icons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nails-hero h1 {
+        font-size: 36px;
+    }
+
+    .nails-hero p {
+        font-size: 18px;
+    }
+
+    .product-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
